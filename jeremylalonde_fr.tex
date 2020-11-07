@@ -1,0 +1,150 @@
+% ------------------------------------------------------------------------------------
+% Resume in Latex
+% Author : Jeremy Lalonde
+% License : MIT
+% Based on: https://github.com/sb2nov/resume
+% ------------------------------------------------------------------------------------
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\include{commands}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% ------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{center}
+  \textbf{\Huge \scshape Jérémy Lalonde} \\ \vspace{1pt}
+  \small 123-456-7890 $|$ \href{mailto:jeremy.lalonde.1@ens.etsmtl.ca}{jeremy.lalonde.1@ens.etsmtl.ca} $|$ 
+  \href{https://linkedin.com/in/jeremy-lalonde}{linkedin.com/in/jeremy-lalonde} $|$
+  \href{https://github.com/G-lalonde}{github.com/G-lalonde} \\
+  \textit{\small {Autonome, passionné et avide d'apprendre!}}
+\end{center}
+
+\section{Éducation}
+  \resumeSubHeadingListStart
+    \resumeSubheadingTwo 
+      {École de technologie supérieure}{Automne 2018 -- Présent}
+      {Baccalauréat en génie logiciel}{Moy. Cumul. 3.92/4.3}
+      {Cheminement universitaire en technologie - Profil informatique}{Moy. Cumul. 4.03/4.3}
+    \resumeSubheading
+      {Université de Montréal}{Automne 2017 -- Été 2018}
+      {Baccalauréat en physique (1 an)}{Moy. Cumul. 3.38/4.3}
+    \resumeSubheading
+      {Collège de Valleyfield}{Automne 2015 -- Été 2017}
+      {Sciences de la nature}{Cote R 31,192}
+  \resumeSubHeadingListEnd
+
+\section{Expérience professionnelle}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Analogic Corporation}{Automne 2020 - Hiver 2021}
+      {Développeur Test Système (Stage)}{4950 rue Levy, Saint-Laurent, QC H4R 2P1}
+      \resumeItemListStart
+        \resumeItem{Conception et développement d'un outil de test pour la synchronisation de détecteurs de rayons X en Python }
+        \resumeItem{Application d'un processus de test pour la vérification et la validation de l'application avec Jira et Zephyr}
+        \resumeItem{Relâche de l'application et intégration dans un processus de CI/CD avec Bamboo}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Décathlon Canada}{Été 2019 - Été 2020}
+      {Développeur e-commerce}{2151 Boulevard Lapinière, Brossard, QC J4W 2T5}
+      \resumeItemListStart
+        \resumeItem{Création de modules Prestashop pour divers projets}
+        \resumeItem{Correction de bugs et implémentation de fonctionnalités avec Prestashop en PHP}
+      \resumeItemListEnd
+      \textit{\small {Développeur e-commerce (Stage)}}\vspace{-7pt}
+        \resumeItemListStart
+          \resumeItem{Création de modules Prestashop permettant l'intégration de \textit{cross-selling} via des appels à des API Heroku}
+          \resumeItem{Participation à la refonte totale du UI/UX en JavaScript, Smarty et Sass}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {École de technologie supérieure}{Automne 2019 -- Présent}
+      {Auxiliaire de laboratoire}{1100 rue Notre-Dame Ouest, Montréal, QC H3C 1K3}
+      \resumeItemListStart
+        \resumeItem{Accompagnement des étudiants dans leur apprentissage du binaire et des bases de la programmation en C}
+        \resumeItem{Appui aux étudiants dans leurs apprentissages de la programmation orientée objet en Java}
+        \resumeItem{Assistance aux étudiants lors des périodes de travaux pratiques pour la réalisation de leurs projets d'équipe}
+      \resumeItemListEnd
+    
+    \resumeSubheading
+      {RE-AK Technologies}{Hiver 2020 - Été 2020}
+      {Développeur C\# (Unity)}{400 rue Montfort, Montréal, QC H3C 4A8}
+      \resumeItemListStart
+        \resumeItem{Conversion d'une application de collecte de données métriques émotionnelles vers un format tablette avec Unity}
+        \resumeItem{Expansion de l'application permettant la connexion et le contrôle de multiples capteurs d'EEG simultanément}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\section{Compétences techniques}
+\begin{itemize}[leftmargin=0.15in, label={}]
+   \small{\item{
+    \textbf{Langages}{: Java, Python, C/C++, Swift, C\#, SQL, PHP, JavaScript, HTML/CSS} \\
+    \textbf{Frameworks}{: Java Swing, JUnit, Node.js, Prestashop} \\
+    \textbf{Outils de développement}{: Git, Jira, Confluence, Bamboo, Docker, VS Code, Xcode, Visual Studio, IntelliJ, Eclipse} \\
+    \textbf{Libraries}{: NumPy, Matplotlib} \\
+   }}
+\end{itemize}
+
+\section{Projets personnels}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Brosse} $|$ \emph{Swift}}{Printemps 2020 -- Présent}
+          \resumeItemListStart
+            \resumeItem{Conception et développement complet d'une application iOS de jeu de soirée entre amis en Swift}
+            \resumeItem{Collaboration pour la création de maquettes sur Figma}
+            \resumeItem{Incorporation de la collecte de données avec Google Analytics}
+            \resumeItem{Déploiement d'une version bêta publique avec Testflight}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\section{Centres d'intérêt}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \textbf{Sports}{: Parachutisme (License A), hockey compétitif depuis l'âge de 5 ans, golf, planche à neige, randonnée pédestre} \\
+    \textbf{Voyages}{: Voyages d'immersion culturelle d'un mois en Équateur, voyage backpack de trois semaines au Pérou} \\
+    }}
+  \end{itemize}
+
+\end{document}
