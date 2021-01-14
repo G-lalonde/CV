@@ -42,7 +42,7 @@
 % Sections formatting
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+}{}{0em}{}[\color{black}\titlerule]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -52,33 +52,45 @@
 \begin{document}
 
 \begin{center}
-  \textbf{\Huge \scshape J\'er\'emy Lalonde} \\ \vspace{1pt}
+  \textbf{\Huge \scshape J\'er\'emy Lalonde} \\ \vspace{5pt}
   \small 123-456-7890 $|$ \href{mailto:jeremy.lalonde.1@ens.etsmtl.ca}{jeremy.lalonde.1@ens.etsmtl.ca} $|$ 
   \href{https://linkedin.com/in/jeremy-lalonde}{linkedin.com/in/jeremy-lalonde} $|$
-  \href{https://github.com/G-lalonde}{github.com/G-lalonde} \\
+  \href{https://github.com/G-lalonde}{github.com/G-lalonde} \\ \vspace{3pt}
   \textit{\small {Autonome, passionn\'e et avide d'apprendre!}}
 \end{center}
 
 \section{\'Education}
   \resumeSubHeadingListStart
-    \resumeSubheadingTwo 
-      {\'Ecole de technologie sup\'erieure}{Automne 2018 -- Pr\'esent}
+    \resumeSubheadingFour 
       {Baccalaur\'eat en g\'enie logiciel}{Moy. 3,92/4,3}
+      {\'Ecole de technologie sup\'erieure, Montr\'eal}{Automne 2019 -- Pr\'esent}
+    \resumeSubheadingFour 
       {Cheminement universitaire en technologie - Profil informatique}{Moy. 4,03/4,3}
-    \resumeSubheading
-      {Universit\'e de Montr\'eal}{Automne 2017 -- \'Et\'e 2018}
-      {Baccalaur\'eat en physique (1 an)}{Moy. 3,38/4,3}
-    \resumeSubheading
-      {Coll\`ege de Valleyfield}{Automne 2015 -- \'Et\'e 2017}
+      {\'Ecole de technologie sup\'erieure, Montr\'eal}{Automne 2018 -- Automne 2019}
+    % \resumeSubheadingFour
+    %   {Universit\'e de Montr\'eal}{Automne 2017 -- \'Et\'e 2018}
+    %   {Baccalaur\'eat en physique (1 an)}{Moy. 3,38/4,3}
+    \resumeSubheadingFour
       {Sciences de la nature}{Cote R 31,192}
+      {Coll\`ege de Valleyfield}{Automne 2015 -- \'Et\'e 2017}
   \resumeSubHeadingListEnd
 
+\vspace{1pt}
 \section{Exp\'erience professionnelle}
   \resumeSubHeadingListStart
 
-    \resumeSubheading
-      {Analogic Corporation}{Automne 2020 - Hiver 2021}
-      {D\'eveloppeur Test Syst\`eme (Stage)}{4950 rue Levy, Saint-Laurent, QC H4R 2P1}
+    \resumeSubheadingThree
+      {D\'eveloppeur Python}{Hiver 2021 - Pr\'esent}
+      {RE-AK Technologies, Montr\'eal}
+      \resumeItemListStart
+        \resumeItem{Adaptation d'un daemon de récolte de données émotionnelles pour un projet de film interactif en Python}
+        \resumeItem{Communication avec un dashboard permettant la visualisation des \'emotions dans le temps via websockets}
+      \resumeItemListEnd
+    
+      \vspace{-7pt}
+    \resumeSubheadingThree
+      {D\'eveloppeur Test Syst\`eme (Stage)}{Automne 2020 - Hiver 2021}
+      {Analogic Corporation, Saint-Laurent}
       \resumeItemListStart
         \resumeItem{Conception et d\'eveloppement d'un outil de test pour la synchronisation de d\'etecteurs de rayon X en Python }
         \resumeItem{Cr\'eation d'un processus de test pour la v\'erification et la validation de l'application avec Jira et Zephyr}
@@ -86,31 +98,35 @@
         \resumeItem{Implémentation d'une fonction dans l'API du d\'etecteur en C++ pour la gestion et r\'ecup\'eration d'images raw}
       \resumeItemListEnd
 
-    \resumeSubheading
-      {\'Ecole de technologie sup\'erieure}{Automne 2019 -- Pr\'esent}
-      {Auxiliaire de laboratoire}{1100 rue Notre-Dame Ouest, Montr\'eal, QC H3C 1K3}
+    \resumeSubheadingThree
+      {Auxiliaire de laboratoire}{Automne 2019 -- Pr\'esent}
+      {\'Ecole de technologie sup\'erieure, Montr\'eal}
       \resumeItemListStart
         \resumeItem{Accompagnement des \'etudiants dans leur apprentissage du binaire et des bases de la programmation en C}
-        \resumeItem{Appui aux \'etudiants dans leurs apprentissages de la programmation orient\'ee objet en Java}
+        \resumeItem{Appui aux \'etudiants dans leur apprentissage de la programmation orient\'ee objet en Java}
         \resumeItem{Assistance aux \'etudiants lors des p\'eriodes de travaux pratiques pour la r\'ealisation de leurs projets d'\'equipe}
       \resumeItemListEnd
     
-    \resumeSubheading
-      {RE-AK Technologies}{Hiver 2020 - \'Et\'e 2020}
-      {D\'eveloppeur C\# (Unity)}{400 rue Montfort, Montr\'eal, QC H3C 4A8}
+    \resumeSubheadingThree
+      {D\'eveloppeur C\# (Unity)}{Hiver 2020 - \'Et\'e 2020}
+      {RE-AK Technologies, Montr\'eal}
       \resumeItemListStart
         \resumeItem{Conversion d'une application de collecte de donn\'ees m\'etriques \'emotionnelles vers un format tablette avec Unity}
         \resumeItem{Expansion de l'application permettant la connexion et le contr\^ole de multiples capteurs d'EEG simultan\'ement}
       \resumeItemListEnd
-
-    \resumeSubheading
-      {D\'ecathlon Canada}{\'Et\'e 2019 - \'Et\'e 2020}
-      {D\'eveloppeur e-commerce, Back-end}{2151 Boulevard Lapini\`ere, Brossard, QC J4W 2T5}
+    
+    \clearpage
+    \resumeSubheadingThree
+      {D\'eveloppeur e-commerce, Back-end}{Automne 2019 - \'Et\'e 2020}
+      {D\'ecathlon Canada, Brossard}
       \resumeItemListStart
         \resumeItem{Cr\'eation de modules Prestashop pour divers projets}
         \resumeItem{Correction de bugs et impl\'ementation de fonctionnalit\'es avec Prestashop en PHP}
       \resumeItemListEnd
-      \textit{\small {D\'eveloppeur e-commerce, Full-Stack (Stage)}}\vspace{-7pt}
+    
+    \resumeSubheadingThree
+      {D\'eveloppeur e-commerce, Full-Stack (Stage)}{\'Et\'e 2019 - Automne 2019}
+      {D\'ecathlon Canada, Brossard}
         \resumeItemListStart
           \resumeItem{Cr\'eation de modules Prestashop permettant l'int\'egration de \textit{cross-selling} via des appels \`a des API Heroku}
           \resumeItem{Participation \`a la refonte totale du UI/UX en JavaScript, Smarty et Sass}
@@ -118,35 +134,52 @@
 
   \resumeSubHeadingListEnd
 
+\vspace{1pt}
 \section{Comp\'etences techniques}
-\begin{itemize}[leftmargin=0.15in, label={}]
-   \small{\item{
-    \textbf{Langages}{: Java, Python, C/C++, Swift, C\#, SQL, PHP, JavaScript, HTML/CSS, LaTeX} \\
-    \textbf{Frameworks}{: Java Swing, JUnit, Node.js, Prestashop} \\
-    \textbf{Outils de d\'eveloppement}{: Git, Jira, Confluence, Bamboo, Docker, VS Code, Xcode, Visual Studio, IntelliJ, Eclipse} \\
-    \textbf{Méthodologie}{: Agile, Scrum} \\
-    \textbf{Syst\`eme d'exploitation}{: UNIX (MacOS / Linux), Windows} \\
-   }}
-\end{itemize}
+  \resumeSubHeadingListStart
+    \competenceItem{Langages :}
+      {Java, Dart, Python, C/C++, Swift, C\#, SQL, PHP, JavaScript, TypeScript, HTML/CSS, LaTeX}
+    \competenceItem{Frameworks :}
+      {Flutter, Java Swing, JUnit, Node.js, Prestashop}
+    \competenceItem{Outils de d\'eveloppement :}
+      {Git, Jira, Confluence, Bamboo, Docker, VS Code, Xcode, Visual Studio, IntelliJ, Eclipse, npm, Poetry}
+    \competenceItem{Méthodologie :}
+      {Agile, Scrum}
+    \competenceItem{Syst\`eme d'exploitation :}
+      {UNIX (MacOS / Linux), Windows}
+  \resumeSubHeadingListEnd
 
+\vspace{1pt}
 \section{Projets personnels}
     \resumeSubHeadingListStart
+
       \resumeProjectHeading
-          {\textbf{Brosse} $|$ \emph{Swift}}{Printemps 2020 -- Pr\'esent}
+          {\textbf{Brosse - Application mobile} $|$ \emph{Flutter}}{Printemps 2020 -- Pr\'esent}
           \resumeItemListStart
-            \resumeItem{Conception et d\'eveloppement complet d'une application iOS de jeu de soir\'ee entre amis en Swift}
+            \resumeItem{Conception et d\'eveloppement complet d'une application mobile flutter de jeu de soir\'ee entre amis}
             \resumeItem{Collaboration pour la cr\'eation de maquettes sur Figma}
             \resumeItem{Incorporation de la collecte de donn\'ees avec Google Analytics}
-            \resumeItem{D\'eploiement d'une version b\^eta publique avec Testflight}
+            % \resumeItem{D\'eploiement d'une version b\^eta publique avec Testflight}
           \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Ornithoptère - Projet collaboratif de fin d'ann\'ee}}{Automne 2018 -- Automne 2019}
+          \resumeItemListStart
+            \resumeItem{\'Elaboration d'un circuit imprim\'e pour la fabrication d'une t\'el\'ecommande}
+            \resumeItem{D\'eveloppement d'un code embarqu\'e permettant la communication entre l'ornithoptère et la t\'el\'ecommande}
+            \resumeItem{Conception d'une maquette 3D compl\`ete de l'ornithoptère}
+            \resumeItem{Fabrication des pi\`eces \`a l'aide d'imprimantes 3D, de d\'ecoupe laser et de machines d'usage.}
+            \resumeItem{Collaboration avec des membres d'autres g\'enies}
+            \resumeItem{Participation \`a une comp\'etition finale \'evaluant chaque \'equipe sur le design, la manoeuvrabilit\'e, la hauteur et la pr\'ecision du vol}
+          \resumeItemListEnd
+
     \resumeSubHeadingListEnd
 
 \section{Centres d'int\'er\^et}
-  \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-    \textbf{Sports}{: Parachutisme (License A), hockey comp\'etitif depuis l'\^age de 5 ans, golf, planche \`a neige, randonn\'ee p\'edestre} \\
-    \textbf{Voyages}{: Voyages d'immersion culturelle d'un mois en \'Equateur, voyage backpack de trois semaines au P\'erou} \\
-    }}
-  \end{itemize}
-
+  \resumeSubHeadingListStart
+    \competenceItem{Sports :}
+      {Parachutisme (License A), hockey comp\'etitif depuis l'\^age de 5 ans, golf, planche \`a neige, randonn\'ee p\'edestre}
+    \competenceItem{Voyages :}
+      {Voyages d'immersion culturelle d'un mois en \'Equateur, voyage en sac \`a dos de trois semaines au P\'erou}
+  \resumeSubHeadingListEnd
 \end{document}
