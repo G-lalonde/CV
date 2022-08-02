@@ -42,110 +42,147 @@
 % Sections formatting
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+}{}{0em}{}[\color{black}\titlerule]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
+% ------------------------------------------------------------------------------------
+
 \begin{document}
 
 \begin{center}
-  \textbf{\Huge \scshape Jérémy Lalonde} \\ \vspace{1pt}
-  \small 123-456-7890 $|$ \href{mailto:jeremy.lalonde.1@ens.etsmtl.ca}{jeremy.lalonde.1@ens.etsmtl.ca} $|$ 
+  \textbf{\Huge Jérémy Lalonde} \\ \vspace{5pt}
+  \small 123-456-7890 $|$ \href{mailto:jeremy.lalonde.1@ens.etsmtl.ca}{jeremy.lalonde.1@ens.etsmtl.ca} $|$
   \href{https://linkedin.com/in/jeremy-lalonde}{linkedin.com/in/jeremy-lalonde} $|$
-  \href{https://github.com/G-lalonde}{github.com/G-lalonde} \\
-  \textit{\small {Autonomous, passionate and eager to learn!}}
+  \href{https://github.com/G-lalonde}{github.com/G-lalonde} \\ \vspace{3pt}
 \end{center}
 
 \section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheadingTwo 
-      {École de technologie supérieure}{Fall 2018 -- Present}
-      {Bachelor of Software Engineering}{GPA 3.92/4.3}
-      {Technological academic path - Computer science profile}{GPA 4.03/4.3}
-    \resumeSubheading
-      {Université de Montréal}{Fall 2017 -- Summer 2018}
-      {Bachelor of Physics (1 year)}{GPA 3.38/4.3}
-    \resumeSubheading
-      {Collège de Valleyfield}{Fall 2015 -- Summer 2017}
-      {Natural sciences}{Cote R 31.192}
-  \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+\resumeSubheadingFour
+{Bachelor of Software Engineering}{GPA. 3,97/4,3}
+{École de technologie supérieure, Montreal}{Fall 2019 -- Fall 2022}
+\resumeSubheadingFour
+{Technological Academic Path - Computer Science Specialization}{GPA. 4,03/4,3}
+{École de technologie supérieure, Montreal}{Fall 2018 -- Fall 2019}
+\resumeSubHeadingListEnd
 
-\section{Professional Experience}
-  \resumeSubHeadingListStart
+\vspace{1pt}
+\section{Professional experiences}
+\resumeSubHeadingListStart
 
-    \resumeSubheading
-      {Analogic Corporation}{Fall 2020 - Winter 2021}
-      {System Test Developer (Intership)}{4950 rue Levy, Saint-Laurent, QC H4R 2P1}
-      \resumeItemListStart
-        \resumeItem{Designed and developped a test tool for the synchronization of X-ray detectors in Python }
-        \resumeItem{Created and used a test process for the verification and validation of the test tool with Jira and Zephyr}
-        \resumeItem{Released and integrated the test tool into a CI/CD process with Bamboo}
-        \resumeItem{Implemented a function in the detector's API in C++ for the management and recovery of raw images}
-      \resumeItemListEnd
-      
-    \resumeSubheading
-      {École de technologie supérieure}{Fall 2019 -- Present}
-      {Teacher Assistant}{1100 rue Notre-Dame Ouest, Montréal, QC H3C 1K3}
-      \resumeItemListStart
-        \resumeItem{Provide help for students in their learning of binary and the programming basics in C}
-        \resumeItem{Support students in their learning of object-oriented programming in Java}
-        \resumeItem{Assist students during periods of practical work for the realization of their team projects}
-      \resumeItemListEnd
-    
-    \resumeSubheading
-      {RE-AK Technologies}{Winter 2020 - Summer 2020}
-      {C\# Developer (Unity)}{400 rue Montfort, Montréal, QC H3C 4A8}
-      \resumeItemListStart
-        \resumeItem{Converted a cognitive state data collection application to a tablet format with Unity }
-        \resumeItem{Scaled the data collection application to allow connection and control to multiple EEG sensors simultaneously}
-      \resumeItemListEnd
+\resumeSubheadingThree
+{iOS Developer (Internship)}{Summer 2022 - Fall 2022}
+{Genetec, Montreal}
+\resumeItemListStart
+\resumeItem{Analyzed, designed and developed of a functionality to select and change the active account of a video surveillance application}
+\resumeItem{Redesigned the visual of the login experience in SwiftUI}
+\resumeItem{Developed a weather application to learn iOS SOLID architecture and state machine patterns with UIKit and SwiftUI}
+\resumeItemListEnd
 
-    \resumeSubheading
-      {Décathlon Canada}{Summer 2019 - Summer 2020}
-      {Back-End E-Commerce Developer}{2151 Boulevard Lapinière, Brossard, QC J4W 2T5}
-      \resumeItemListStart
-        \resumeItem{Created Prestashop modules for various projects}
-        \resumeItem{Implemented features with Prestashop in PHP}
-      \resumeItemListEnd
-      \textit{\small {Full-Stack E-Commerce Developer (Intership)}}\vspace{-7pt}
-        \resumeItemListStart
-          \resumeItem{Created Prestashop modules allowing the integration of cross-selling via calls to Heroku APIs}
-          \resumeItem{Worked on the total overhaul of the UI/UX in JavaScript, Smarty and Sass}
-        \resumeItemListEnd
+\resumeSubheadingThree
+{Fullstack Developer (Internship)}{Fall 2021 - Winter 2022}
+{GSoft, Montreal}
+\resumeItemListStart
+\resumeItem{Developed dashboards displaying event history by leveraging event sourcing in TypeScript and C\#}
+\resumeItem{Investigated, designed and implementated a mechanism to export the activity flow of Microsoft tenants}
+\resumeItem{Designed and implementated an alert mechanisms with the Microsoft Team's chatbot}
+\resumeItemListEnd
+
+\resumeSubheadingThree
+{Python Developer}{Winter 2021 - Summer 2021}
+{RE-AK Technologies, Montreal}
+\resumeItemListStart
+\resumeItem{Designed and developed an OSC communication module}
+\resumeItem{Integrated the Vizia kit with Docker to improve its portability}
+\resumeItem{Adaptated an emotional data collection daemon for an interactive film project in Python}
+\resumeItem{Developed a communication mechanism via websockets to send emotions to a custom dashboard for real time visualization}
+\resumeItemListEnd
+
+\vspace{-7pt}
+\resumeSubheadingThree
+{System Test Developer (Internship)}{Fall 2020 - Winter 2021}
+{Analogic Corporation, Saint-Laurent}
+\resumeItemListStart
+\resumeItem{Designed and developed a tool to test the synchronization of X-ray detectors in Python}
+\resumeItem{Created a verification and validation process for the application with Jira and Zephyr}
+\resumeItem{Set up a release pipeline for CI/CD with Atlassian's Bamboo}
+\resumeItem{Implemented a function in the detector's API to allow management and recovery of raw images in C++}
+\resumeItemListEnd
+
+\resumeSubheadingThree
+{E-commerce Developer, Fullstack (Internship / part-time)}{Summer 2019 - Summer 2020}
+{Décathlon Canada, Brossard}
+\resumeItemListStart
+\resumeItem{Created a Prestashop module to integrate cross-selling in the website}
+\resumeItem{Participated in the UI overhaul of the website with JavaScript, Smarty and Sass}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\vspace{1pt}
+\section{Projets}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{\href{https://github.com/G-lalonde/brosse_app}{Brosse - Mobile application}} $|$ \emph{Flutter - FlutterFire Stack}}{Spring 2020 -- Now}
+\resumeItemListStart
+\resumeItem{Designed and developed an entire mobile application to animate your evenings with your friends}
+\resumeItem{Put in production on the Google Play Store}
+\resumeItem{Deployed a public beta version for iOS with Testflight}
+\resumeItem{Collected data with Firebase for performance analysis, crashes and user behavior}
+\resumeItem{Linked a Cloud Firestore database for real-time content management}
+\resumeItem{Implementated an API for question suggestions with Google Apps Script}
+\resumeItem{Created mockups on Figma for the UI}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Ornithopter - End of year collaborative project}}{Fall 2018 -- Fall 2019}
+\resumeItemListStart
+\resumeItem{Developed a printed circuit for the manufacturing of a remote control}
+\resumeItem{Developed a communication mechanism to control the ornithopter via a wireless remote}
+\resumeItem{Designed a complete 3D model of the ornithopter}
+\resumeItem{Created all of the parts using 3D printers, laser cutters and machining machines}
+\resumeItem{Collaborated with members of other engineering programs}
+\resumeItem{Participated in a final competition evaluating each team on design, maneuverability, and flight height and accuracy}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\vspace{1pt}
+\section{Awards and Recognition}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{{Minister of Higher Education Excellence Scholarships}}}{Winter 2021}
+\resumeItemListStart
+\resumeItem{Amount of \$1000 awarded to students who present a quality academic record through the Government of Quebec's Scholarships for Excellence in Computer Science, Computer Engineering and Electrical, Electronic and Communications Engineering program}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\vspace{1pt}
+\section{Technical skills}
+\resumeSubHeadingListStart
+
+\competenceItem{Languages :}
+{Swift, C\#, TypeScript, Dart, Python, Java, C/C++, SQL, PHP, JavaScript, HTML, CSS}
+\competenceItem{Frameworks :}
+{SwiftUI, Combine, RxSwift, .NET, React, Redux, Node.js, EventStore, Flutter}
+\competenceItem{Development tools :}
+{Xcode, Git, VSCode, Firebase, Docker, Jira, Confluence, Azure DevOps} 
+\competenceItem{Methodology :}
+{Agile, Kanban, Design sprint, Scrum}
+\resumeSubHeadingListEnd
 
 
-  \resumeSubHeadingListEnd
-
-\section{Technical Skills}
-\begin{itemize}[leftmargin=0.15in, label={}]
-   \small{\item{
-    \textbf{Languages}{: Java, Python, C/C++, Swift, C\#, SQL, PHP, JavaScript, HTML/CSS, LaTeX} \\
-    \textbf{Frameworks}{: Java Swing, JUnit, Node.js, Prestashop} \\
-    \textbf{Development tools}{: Git, Jira, Confluence, Bamboo, Docker, VS Code, Xcode, Visual Studio, IntelliJ, Eclipse} \\
-    \textbf{Methodology}{: Agile, Scrum} \\
-    \textbf{OS}{: UNIX (MacOS / Linux), Windows} \\
-   }}
-\end{itemize}
-
-\section{Personal Projects}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{Brosse} $|$ \emph{Swift}}{Spring 2020 -- Present}
-          \resumeItemListStart
-            \resumeItem{Designed and developped an iOS application for evening games with friends in Swift}
-            \resumeItem{Collaborated on the creation of models on Figma}
-            \resumeItem{Incorporated data collection with Google Analytics}
-            \resumeItem{Deployed a public beta with Testflight}
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd
-
-\section{Hobbies}
-  \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-    \textbf{Sports}{: Skydiving ("A" license), competitive hockey since the age of 5, golf, snowboarding, hiking} \\
-    \textbf{Travel}{: One-month cultural immersion trips to Ecuador, three-week backpacking trip to Peru} \\
-    }}
-  \end{itemize}
-
+\vspace{1pt}
+\section{Interests}
+\resumeSubHeadingListStart
+\competenceItem{Sports :}
+{Skydiving (License A), competitive ice hockey since the age of 5, golf, snowboarding, hiking, camping.}
+\competenceItem{Traveling :}
+{2 month trip around Canada in a minivan. One month cultural immersion trip in Ecuador, three weeks backpacking trip in Peru.}
+\resumeSubHeadingListEnd
 \end{document}
